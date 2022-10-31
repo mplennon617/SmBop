@@ -114,7 +114,7 @@ def run():
     )
     prefix = ""
     # prefix = "/home/ohadr/"
-    prefix = "/media/disk1/ohadr/"
+    # prefix = "/media/disk1/ohadr/"
 
 
     assert not pathlib.Path(f"{prefix}experiments/{experiment_name}").exists()

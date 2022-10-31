@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -J p128                    # job name to display in squeue
+#SBATCH -o output_maneframe.txt    # standard output file
+#SBATCH -e error_maneframe.txt     # standard error file
+#SBATCH -n 128               # requested MPI tasks
+#SBATCH -N 4		     # requested nodes
+#SBATCH --ntasks-per-node=32 # maximum task load per node
+#SBATCH -p standard-mem-s    # requested queue
+#SBATCH -t 00:10:00          # maximum runtime in minutes
+#SBATCH --exclusive          # do not share nodes
+
+module purge                           # Unload all modules
+module load python                     # Load R, change version as needed
+
+python exec.py                      # Edit Python script name as needed
