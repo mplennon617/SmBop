@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -J train                       # Job name
+#SBATCH -o train-output.txt            # Output file name
+#SBATCH -e train-error.txt	       # Error file name
+#SBATCH -p standard-mem-s              # Partition (queue)
+#SBATCH --exclusive                    # Exclusivity
+#SBATCH --mem=250G                     # Total memory required per node
+
+module purge                           # Unload all modules
+module load python/3                   # Load R, change version as needed
+source ~/.venv/jupyter_37/bin/activate
+
+python exec.py                      # Edit Python script name as needed

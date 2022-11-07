@@ -1,0 +1,10 @@
+tar: p128.job: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+Traceback (most recent call last):
+  File "exec.py", line 146, in <module>
+    run()
+  File "exec.py", line 128, in run
+    f"git ls-files | tar Tzcf - backup/{experiment_name}.tgz", shell=True
+  File "/hpc/spack/opt/spack/linux-centos7-x86_64/gcc-9.2.0/python-3.7.4-3zfxo7jcazogwfhxhjig6zr447owhkcd/lib/python3.7/subprocess.py", line 347, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'git ls-files | tar Tzcf - backup/messy-chocolate-dingo.tgz' returned non-zero exit status 2.
