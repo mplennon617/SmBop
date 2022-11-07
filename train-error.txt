@@ -1,3 +1,4 @@
+==> Warning: config:module_roots has been replaced by modules:[module set]:roots and is ignored
 tar: p128.job: Cannot stat: No such file or directory
 tar: Exiting with failure status due to previous errors
 Traceback (most recent call last):
@@ -7,4 +8,4 @@ Traceback (most recent call last):
     f"git ls-files | tar Tzcf - backup/{experiment_name}.tgz", shell=True
   File "/hpc/spack/opt/spack/linux-centos7-x86_64/gcc-9.2.0/python-3.7.4-3zfxo7jcazogwfhxhjig6zr447owhkcd/lib/python3.7/subprocess.py", line 347, in check_call
     raise CalledProcessError(retcode, cmd)
-subprocess.CalledProcessError: Command 'git ls-files | tar Tzcf - backup/messy-chocolate-dingo.tgz' returned non-zero exit status 2.
+subprocess.CalledProcessError: Command 'git ls-files | tar Tzcf - backup/pokey-thistle-gibbon.tgz' returned non-zero exit status 2.
